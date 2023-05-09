@@ -3,3 +3,4 @@
 A collection of design patterns and idioms implemented in the C programming language.
 
 - Singleton
+- Opaque Pointer
