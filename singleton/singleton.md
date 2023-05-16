@@ -24,7 +24,7 @@ A system will often have a configuration and can then only be one of these and c
 
 ## Implementation
 
-In C a singleton can simply by implemented by a static global variable.
+In C a singleton can simply by implemented by a global variable.
 
 ```c
 int singletonInt = 42;
