@@ -16,8 +16,16 @@ A system can have a log where events are stored to be able to see what have happ
 
 ### Subsystems
 
-Certain subsystem can be known to always have only a single instance. Examples of these are; power manager, system initialization, and networking stack.
+Certain subsystem can be known to always have only a single instance. Examples are; power manager, system initialization, and networking stack.
 
 ### Configuration
 
-A system will often have a configuration and can then only be one of these, this is hence a use case that can be implemented as a singleton.
+A system will often have a configuration and can then only be one of these and can be implemented as a singleton.
+
+## Implementation
+
+In C a singleton can simply by implemented by a static global variable.
+
+```c
+int singletonInt = 42;
+```
