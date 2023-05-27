@@ -26,12 +26,20 @@ A system will often have a configuration and can then only be one of these and c
 
 In C a singleton can simply by implemented by a global variable. Typically defined in a c file and declared in h file that other files can include to gain access to the singleton.
 
+In file `singleton_int.c`:
+
 ```c
-// In file singleton_int.c
 int singletonInt = 42;
 ```
 
+In file `singleton_int.h`:
+
 ```c
-// In file singleton_int.h
-int singletonInt;
+extern int singletonInt;
+```
+
+In file `main.c`:
+
+```
+printf("Our singleton int equals %d", singletonInt);
 ```
