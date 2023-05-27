@@ -40,6 +40,6 @@ extern int singletonInt;
 
 In file `main.c`:
 
-```
+```c
 printf("Our singleton int equals %d", singletonInt);
 ```

@@ -4,6 +4,7 @@ dictionaryDefinitions: []
 dictionaries: []
 words:
   - cyclomatic
+  - extern
   - struct
 ignoreWords: []
 import: []
