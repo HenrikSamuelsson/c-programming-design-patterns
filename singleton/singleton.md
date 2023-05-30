@@ -46,4 +46,15 @@ In file `main.c`:
 printf("Our singleton int equals %d", singletonInt);
 ```
 
+### Basic Implementation Variant
+
+Another variant is to use a static function locale variable to avoid the global variable.
+
+```c
+int* singletonInt() {
+     static int instance = 42;
+     return &instance;
+ }
+```
+
 ### Thread Safe Implementation
