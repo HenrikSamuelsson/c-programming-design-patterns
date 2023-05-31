@@ -57,6 +57,10 @@ int* singletonInt() {
  }
 ```
 
+```c
+printf("Our singleton int equals %d", *singletonInt());
+```
+
 ### Thread Safe Implementation
 
 ### References
