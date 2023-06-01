@@ -63,6 +63,8 @@ printf("Our singleton int equals %d", *singletonInt());
 
 ### Thread Safe Implementation
 
+Final remark is that we want to make the implementation thread safe if to be able to run in a multithreaded environment. Parts of the code that alters the singleton will need to be wrapped with a critical section or similar depending on platform.
+
 ### References
 
 [StackOverflow Singleton in C](https://stackoverflow.com/questions/803673/how-to-create-a-singleton-in-c)  
