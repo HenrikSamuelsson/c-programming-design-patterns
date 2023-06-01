@@ -65,5 +65,5 @@ printf("Our singleton int equals %d", *singletonInt());
 
 ### References
 
-https://stackoverflow.com/questions/803673/how-to-create-a-singleton-in-c
-https://www.freertos.org/taskENTER_CRITICAL_taskEXIT_CRITICAL.html
+[StackOverflow Singleton in C](https://stackoverflow.com/questions/803673/how-to-create-a-singleton-in-c)
+[FreeRTOS Critical Section](https://www.freertos.org/taskENTER_CRITICAL_taskEXIT_CRITICAL.html)
