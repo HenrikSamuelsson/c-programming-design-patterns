@@ -85,7 +85,7 @@ struct A* getObject()
         instance->x = 1;
         instance->y = 2;
     }
-   taskEXIT_CRITICAL();
+    taskEXIT_CRITICAL();
 
     return instance;
 };
