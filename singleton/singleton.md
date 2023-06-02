@@ -63,7 +63,33 @@ printf("Our singleton int equals %d", *singletonInt());
 
 ### Thread Safe Implementation
 
-Final remark is that we want to make the implementation thread safe if to be able to run in a multithreaded environment. Parts of the code that alters the singleton will need to be wrapped with a critical section or similar depending on platform.
+In a multithreaded environment the implementation will need to be made thread safe. This can be achieved by wrapping writes to the singleton within a critical section or similar, depending on what is supported by the platform.
+
+As an example say that we have an embedded system running FreeRTOS. A singleton can then be implemented in a thread safe way using the pair of macros called `taskENTER_CRITICAL` and `taskEXIT_CRITICAL`.
+
+```c
+struct A
+{
+    int x;
+    int y;
+};
+
+struct A* getObject()
+{
+    static struct A *instance = NULL;
+
+    taskENTER_CRITICAL();
+    if (instance == NULL)
+    {
+        instance = malloc(sizeof(*instance));
+        instance->x = 1;
+        instance->y = 2;
+    }
+   taskEXIT_CRITICAL();
+
+    return instance;
+};
+```
 
 ### References
 
