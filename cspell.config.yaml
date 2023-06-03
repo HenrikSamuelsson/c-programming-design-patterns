@@ -5,6 +5,7 @@ dictionaries: []
 words:
   - cyclomatic
   - extern
+  - malloc
   - struct
 ignoreWords: []
 import: []
