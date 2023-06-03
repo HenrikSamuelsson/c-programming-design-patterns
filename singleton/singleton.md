@@ -24,7 +24,7 @@ A system will often have a configuration and can then only be one of these and c
 
 ## Implementation
 
-### Basic Implementation
+### Global Variable Implementation
 
 In C a singleton can simply by implemented by a global variable. Typically defined in a c file and declared in h file that other files can include to gain access to the singleton.
 
@@ -46,7 +46,7 @@ In file `main.c`:
 printf("Our singleton int equals %d", singletonInt);
 ```
 
-### Basic Implementation Variant
+### Static Function Locale Implementation
 
 Another variant is to use a static function locale variable to avoid the global variable.
 
@@ -61,9 +61,9 @@ int* singletonInt() {
 printf("Our singleton int equals %d", *singletonInt());
 ```
 
-### Thread Safe Implementation
+### Dynamic Thread Safe Implementation
 
-In a multithreaded environment the implementation will need to be made thread safe. This can be achieved by wrapping writes to the singleton within a critical section or similar, depending on what is supported by the platform.
+In a multithreaded environment the implementation will need to be made thread safe. This can be achieved by wrapping writes to the singleton within a critical section or similar depending on what is supported by the platform.
 
 As an example say that we have an embedded system running FreeRTOS. A singleton can then be implemented in a thread safe way using the pair of macros called `taskENTER_CRITICAL` and `taskEXIT_CRITICAL`.
 
@@ -71,7 +71,6 @@ As an example say that we have an embedded system running FreeRTOS. A singleton 
 struct A
 {
     int x;
-    int y;
 };
 
 struct A* getObject()
@@ -82,8 +81,7 @@ struct A* getObject()
     if (instance == NULL)
     {
         instance = malloc(sizeof(*instance));
-        instance->x = 1;
-        instance->y = 2;
+        instance->x = 42;
     }
     taskEXIT_CRITICAL();
 
