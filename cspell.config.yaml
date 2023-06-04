@@ -3,6 +3,8 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - Apress
+  - Beningo
   - cyclomatic
   - extern
   - struct
