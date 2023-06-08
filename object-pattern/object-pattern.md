@@ -16,6 +16,10 @@ Simpler to get multi-threaded programming correct due to that the design makes i
 
 Codes becomes testable by enabling compilation in isolation and mocking.
 
+## Implementation
+
+TODO
+
 ## Note
 
 The object pattern is also known as the object oriented programming pattern.
