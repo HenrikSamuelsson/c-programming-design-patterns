@@ -1,7 +1,9 @@
+#include <stdint.h>
+
 struct example_object
 {
     uint32_t data;
     uint32_t flags;
-}
+};
 
-int my_object_init(struct my_object *self);
+int example_object_init(struct example_object *self);
