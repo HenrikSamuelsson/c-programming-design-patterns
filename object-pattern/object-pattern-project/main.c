@@ -6,9 +6,6 @@
 
 int main(void)
 {
-    printf("Hello Object Pattern");
-    printf("\n");
-
     struct example_object object;
     example_object_init(&object);
 
