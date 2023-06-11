@@ -16,7 +16,7 @@ Codes becomes testable by enabling compilation in isolation and mocking.
 
 The structure of the object and public methods for the object are declared in a header file that have the same name as the object.
 
-https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/5b7a7494547beae6539452328e3aec7f47c1e0b7/object-pattern/object-pattern-project/example_object.h#L3-L9
+<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/5b7a7494547beae6539452328e3aec7f47c1e0b7/object-pattern/object-pattern-project/example_object.h#L3-L9>
 
 ## Note
 
