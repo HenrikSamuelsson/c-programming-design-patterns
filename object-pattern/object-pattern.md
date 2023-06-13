@@ -10,7 +10,7 @@ Improves the organization of the source code making it easier to visualize due t
 
 Control of the data scope prevents unintentional data manipulation.
 
-Codes becomes testable by enabling compilation in isolation and mocking.
+Codes becomes testable by enabling compilation in isolation with mocked input.
 
 ## Implementation
 
