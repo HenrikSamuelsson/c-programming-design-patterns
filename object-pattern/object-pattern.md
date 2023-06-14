@@ -2,7 +2,7 @@
 
 ## Definition
 
-The object pattern groups data and associated functions into a hierarchy. The object is provided as an argument to functions, making it flow along the code path, as opposed to having functions work on global external data.
+The object pattern groups data and associated functions into a hierarchy. The object it self is provided as an argument to the object functions, making the data flow along the code path, as opposed to having functions work on external data.
 
 ## Motivation
 
@@ -32,6 +32,10 @@ The header file is then included in the application files to be able to create o
 
 <https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/c03a3a8a7a93a200cad0d9ded62657354ebc2584/object-pattern/object-pattern-project/main.c#L9-L10>
 
-## Note
+## Notes
 
-The object pattern is also known as the object oriented programming pattern.
+The object pattern is also known as the object oriented programming pattern. THis name comes from that the object pattern implements some concepts from object oriented programming.
+
+Context shall be passed as an parameter to object functions by including a pointer to the object it self as the first parameter, this parameter shall be named self. This is to have the data flow along the code path which makes it easier to understand and debug the code base.
+
+Object functions are not allowed to access any global data, object functions are also not allowed to have static data. These two constraints ensures reentrancy and testability by feeding the functions with mocked data.
