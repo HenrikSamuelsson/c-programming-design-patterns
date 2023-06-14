@@ -8,6 +8,7 @@ words:
   - cyclomatic
   - extern
   - malloc
+  - reentrancy
   - struct
 ignoreWords: []
 import: []
