@@ -34,7 +34,7 @@ The header file is then included in the application files to be able to create o
 
 ## Notes
 
-The object pattern is also known as the object oriented programming pattern. THis name comes from that the object pattern implements some concepts from object oriented programming.
+The object pattern is also known as the object oriented programming pattern. This name comes from that the object pattern implements some concepts from object oriented programming.
 
 Context shall be passed as an parameter to object functions by including a pointer to the object it self as the first parameter, this parameter shall be named self. This is to have the data flow along the code path which makes it easier to understand and debug the code base.
 
