@@ -2,5 +2,6 @@
 
 A collection of design patterns and idioms implemented in the C programming language.
 
-- Singleton
-- Opaque Pointer
+- [Object Pattern](object-pattern/object-pattern.md)  
+- Singleton  
+- Opaque Pointer  
