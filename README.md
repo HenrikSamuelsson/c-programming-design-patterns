@@ -4,4 +4,4 @@ A collection of design patterns and idioms implemented in the C programming lang
 
 - [Object Pattern](object-pattern/object-pattern.md)  
 - Singleton  
-- Opaque Pointer  
+- [Opaque Pattern](opaque-pattern/opaque-pattern.md)  
