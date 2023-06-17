@@ -1,9 +1,10 @@
 #include <stdint.h>
 
-struct example_object
+struct animal
 {
-    uint32_t data;
-    uint32_t flags;
+    char *name;
+    uint32_t weight;
+    uint32_t age;
 };
 
-int example_object_init(struct example_object *self);
+int animal_init(struct animal *self);
