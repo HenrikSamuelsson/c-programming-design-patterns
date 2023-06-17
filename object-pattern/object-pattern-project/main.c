@@ -6,10 +6,10 @@
 
 int main(void)
 {
-    struct example_object object;
-    example_object_init(&object);
+    struct animal a;
+    animal_init(&a);
 
-    printf("Our object data = %d", object.data);
+    printf("Our animal is %d years old.", a.age);
     printf("\n");
 
     return EXIT_SUCCESS;

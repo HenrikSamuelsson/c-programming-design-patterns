@@ -2,7 +2,7 @@
 
 #include <string.h>
 
-int example_object_init(struct example_object *self)
+int animal_init(struct animal *self)
 {
     memset(self, 0, sizeof(*self));
     return 0;
