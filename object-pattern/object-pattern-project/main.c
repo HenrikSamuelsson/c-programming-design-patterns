@@ -1,4 +1,4 @@
-#include "example_object.h"
+#include "vehicle.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -6,10 +6,11 @@
 
 int main(void)
 {
-    struct animal a;
-    animal_init(&a);
+    struct vehicle v;
+    vehicle_init(&v, "car");
+    vehicle_accelerate(&v);
 
-    printf("Our animal is %d years old.", a.age);
+    printf("The %s is driving at %d km/h.", v.name, v.speed);
     printf("\n");
 
     return EXIT_SUCCESS;
