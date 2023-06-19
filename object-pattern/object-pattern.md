@@ -26,7 +26,7 @@ The structure of the object type and public methods for the object type are decl
 
 The functions belonging to an object are then defined in a c file. This source file will like the header file be named the same as the name of the object type.
 
-<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/6e3ff0c7f9cbb38e0598445c81a8d04cb8a2c25a/object-pattern/object-pattern-project/vehicle.c#L5-L9>
+<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/6e3ff0c7f9cbb38e0598445c81a8d04cb8a2c25a/object-pattern/object-pattern-project/vehicle.c#L5-L10>
 
 The header file is then included in the application files to be able to create objects and then invoke the object specific function calls as needed.
 
