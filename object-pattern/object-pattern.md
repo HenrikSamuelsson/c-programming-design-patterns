@@ -22,7 +22,7 @@ The object patterns is implemented in three different principal parts:
 
 The structure of the object type and public methods for the object type are declared in a header file that have the same name as the object. First there is a struct that functions as a class definition describing the variables that belong to objects of the class. The methods are part of the class are listed as function declarations below the struct. Functions names are prefixed with the object name to indicate that these are class specific.
 
-<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/6e3ff0c7f9cbb38e0598445c81a8d04cb8a2c25a/object-pattern/object-pattern-project/vehicle.h#L31-L13>
+<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/6e3ff0c7f9cbb38e0598445c81a8d04cb8a2c25a/object-pattern/object-pattern-project/vehicle.h#L3-L13>
 
 The functions belonging to an object are then defined in a c file. This source file will like the header file be named the same as the name of the object type.
 
