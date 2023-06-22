@@ -18,6 +18,7 @@ int vehicle_deinit(struct vehicle * self)
 int vehicle_accelerate(struct vehicle *self)
 {
     self->speed += 1;
+    return 0;
 }
 
 int vehicle_decelerate(struct vehicle *self)
