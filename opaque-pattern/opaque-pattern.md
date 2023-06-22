@@ -12,7 +12,7 @@ Limits dependencies, the code that uses the opaque object do not depend on the i
 
 ## Implementation
 
-The opaque pointer builds on the object pattern with the difference that the 'struct' definition is not placed in the object header file, only the declaration goes in the header file and the full definition is found in the c file.
+The opaque pointer builds on the object pattern with the difference that the attribute structure is only declared in the object header file. The complete definition of the attribute structure is placed in a source file and not in a header file.
 
 ## References
 
