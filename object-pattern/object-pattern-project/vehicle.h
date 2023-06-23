@@ -1,8 +1,10 @@
 #include <stdint.h>
 
+#define NAME_SIZE   32
+
 struct vehicle
 {
-    char name[32];
+    char name[NAME_SIZE];
     int32_t speed;
 };
 

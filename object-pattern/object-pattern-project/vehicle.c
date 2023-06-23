@@ -4,9 +4,9 @@
 
 int vehicle_init(struct vehicle *self, const char *name)
 {
-    strcpy(self->name, name);
+    int result = strncpy_s(self->name, NAME_SIZE, name, NAME_SIZE);
     self->speed = 0;
-    return 0;
+    return result;
 }
 
 int vehicle_deinit(struct vehicle * self)
