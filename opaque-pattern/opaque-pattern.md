@@ -14,7 +14,7 @@ The opaque pattern builds on the object pattern with the difference that the att
 
 See the below header file how the structure called `vehicle` is declared but not defined. This forward declaration enables an application to use the opaque without being aware on all the implementation details. After the declaration follows the public methods that the application can use to work with opaque objects instances.
 
-<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/db16c488118135d57a03b3352b952cb9cd8cbdd8/opaque-pattern/opaque-pattern-project/vehicle.h#>
+<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/db16c488118135d57a03b3352b952cb9cd8cbdd8/opaque-pattern/opaque-pattern-project/vehicle.h#L1-L12>
 
 ## References
 
