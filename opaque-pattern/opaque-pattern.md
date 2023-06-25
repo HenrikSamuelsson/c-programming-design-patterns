@@ -6,7 +6,7 @@ The opaque pattern makes the implementation details of an interface private, it 
 
 ## Motivation
 
-The opaque pattern limits dependencies, the application code that uses the opaque object can not depend on the implementation of the opaque. The application can only use the public interface, actual implementation is hidden, intentionally preventing the application from knowing details that could cause undesired coupling. The result is improved maintainability enabling refactoring of the opaque without needing to worry about breaking the application that uses the opaque.
+The opaque pattern limits dependencies, the application code that uses the opaque object is prevented from depending on the implementation details of the opaque. The application will only use the public interface, actual implementation is intentionally hidden preventing the application from knowing details that could cause undesired coupling. The result is improved maintainability by enabling refactoring of the opaque without needing to worry about breaking the application that uses the opaque.
 
 ## Implementation
 
