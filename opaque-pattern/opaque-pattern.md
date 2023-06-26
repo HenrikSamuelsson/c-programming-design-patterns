@@ -1,8 +1,10 @@
 # Opaque Pattern
 
+The opaque pattern builds on the object pattern meaning that the object pattern need to be understood before learning the opaque pattern.
+
 ## Definition
 
-The opaque pattern makes the implementation details of an interface private, it becomes hidden from the user perspective.
+The opaque pattern makes the implementation details of an interface private, parts becomes hidden from the user.
 
 ## Motivation
 
@@ -12,9 +14,13 @@ The opaque pattern limits dependencies, the application code that uses the opaqu
 
 The opaque pattern builds on the object pattern with the difference that the attribute structure is only declared in the object header file. The complete definition of the attribute structure is placed in a source file and not in a header file.
 
-See the below header file how the structure called `vehicle` is declared but not defined. This forward declaration enables an application to use the opaque without being aware on all the implementation details. After the declaration follows the public methods that the application can use to work with opaque objects instances.
+See the below header file how the structure called `vehicle` is declared but not defined. This forward declaration enables an application to use the opaque without being aware on all the implementation details. After the declaration follows the public methods that the application can use to work with opaque objects instances without knowing all the implementation details.
 
 <https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/db16c488118135d57a03b3352b952cb9cd8cbdd8/opaque-pattern/opaque-pattern-project/vehicle.h#L1-L12>
+
+The full definition of the `vehicle` structure is placed in a C source file, see the below code listing.
+
+<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/c362a15d7f98600c8c7fb72823316520af32c4c0/opaque-pattern/opaque-pattern-project/vehicle.c#L1-L50>
 
 ## References
 
