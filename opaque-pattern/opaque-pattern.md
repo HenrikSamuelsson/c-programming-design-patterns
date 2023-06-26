@@ -24,7 +24,7 @@ The full definition of the `vehicle` structure is placed in a C source file, see
 
 The application can create an use an opaque object after including the `vehicle.h` header file, below follows an example. A vehicle object is first allocated on the stack, a function to retrieve the size of the opaque is provided to be able to know how many bytes of memory to allocate. After creation so can the vehicle object be used, for example can we accelerate the vehicle and check the current speed.
 
-<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/a117f96876368ca691af46d2ea023cd8a566d998/opaque-pattern/opaque-pattern-project/main.c#L8-L14>
+<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/a117f96876368ca691af46d2ea023cd8a566d998/opaque-pattern/opaque-pattern-project/main.c#L8-L13>
 
 ## References
 
