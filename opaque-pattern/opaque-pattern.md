@@ -14,13 +14,13 @@ The opaque pattern limits dependencies, the application code that uses the opaqu
 
 The opaque pattern builds on the object pattern with the difference that the attribute structure is only declared in the object header file. The complete definition of the attribute structure is placed in a source file and not in a header file.
 
-See the below header file how the structure called `vehicle` is declared but not defined. This forward declaration enables an application to use the opaque without being aware on all the implementation details. After the declaration follows the public methods that the application can use to work with opaque objects instances without knowing all the implementation details.
+See the below header file how the structure called `vehicle` is declared but not defined. This forward declaration enables an application to use the opaque without being aware on all the implementation details.
 
-<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/db16c488118135d57a03b3352b952cb9cd8cbdd8/opaque-pattern/opaque-pattern-project/vehicle.h#L1-L12>
+<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/f945bbc440c0caddcb73b7baa6bb960a60c975ff/opaque-pattern/opaque-pattern-project/vehicle.h#L3>
 
 The full definition of the `vehicle` structure is placed in a C source file, see the below code listing.
 
-<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/c362a15d7f98600c8c7fb72823316520af32c4c0/opaque-pattern/opaque-pattern-project/vehicle.c#L1-L50>
+<https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/f945bbc440c0caddcb73b7baa6bb960a60c975ff/opaque-pattern/opaque-pattern-project/vehicle.c#L7-L11>
 
 ## References
 
