@@ -22,7 +22,9 @@ The full definition of the `vehicle` structure is placed in a C source file, see
 
 <https://github.com/HenrikSamuelsson/c-programming-design-patterns/blob/f945bbc440c0caddcb73b7baa6bb960a60c975ff/opaque-pattern/opaque-pattern-project/vehicle.c#L7-L11>
 
-The application can create an use an opaque object after including the `vehicle.h` header file, below follows an example. A vehicle object is first allocated on the stack. The allocation requires knowledge about the size of the opaque object, this is by design provided by the opaque interface in the form of a function dedicated for this purpose.
+The application can create an use an opaque object after including the `vehicle.h` header file. Below follows a code snippet from an example application.
+
+A vehicle object is allocated on the stack. The allocation requires knowledge about the size of the opaque object, this is by design provided by the opaque interface in the form of a function dedicated for this purpose.
 
 After creation so can the vehicle object be used. In the accompanying project so is the vehicle accelerated and the current speed is read out from the object.
 
@@ -30,5 +32,6 @@ After creation so can the vehicle object be used. In the accompanying project so
 
 ## References
 
+[Embedded C Programming Design Patterns, Martin Schröder, 2023])(https://a.co/d/58GRxaD)  
 [Wikipedia - Opaque Pointer](https://en.wikipedia.org/wiki/Opaque_pointer)  
 [Interrupt - Practical Design Patterns: Opaque Pointers and Objects in C](https://interrupt.memfault.com/blog/opaque-pointers#practical-design-patterns-opaque-pointers-and-objects-in-c)  
