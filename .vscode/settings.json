@@ -1,6 +1,7 @@
 {
     "cmake.sourceDirectory": "C:/github/c-programming-design-patterns",
     "files.associations": {
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "errno.h": "c"
     }
 }
