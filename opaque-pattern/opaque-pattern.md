@@ -32,6 +32,6 @@ After creation so can the vehicle object be used. In the accompanying project so
 
 ## References
 
-[Embedded C Programming Design Patterns, Martin Schröder, 2023])(https://a.co/d/58GRxaD)  
+[Embedded C Programming Design Patterns, Martin Schröder, 2023](https://a.co/d/58GRxaD)  
 [Wikipedia - Opaque Pointer](https://en.wikipedia.org/wiki/Opaque_pointer)  
 [Interrupt - Practical Design Patterns: Opaque Pointers and Objects in C](https://interrupt.memfault.com/blog/opaque-pointers#practical-design-patterns-opaque-pointers-and-objects-in-c)  
