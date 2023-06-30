@@ -2,7 +2,7 @@
 #include <math.h>
 #include <errno.h>
 #include <string.h>
- 
+
 int main(void)
 {
     errno = 0;
