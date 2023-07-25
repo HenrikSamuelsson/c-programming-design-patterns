@@ -1,12 +1,8 @@
 #include <stdio.h>
-
-int* singletonInt() {
-     static int instance = 42;
-     return &instance;
- }
+#include"singleton_int.h"
 
 int main (void)
 {
-    printf("Our singleton int equals %d", *singletonInt());
+    printf("Our singleton int equals %d", *getSingletonInt());
     return 0;
 }

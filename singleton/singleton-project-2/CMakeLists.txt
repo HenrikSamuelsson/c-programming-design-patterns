@@ -4,7 +4,7 @@ project(singleton-project-1 VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_executable(singleton-project-2 main.c)
+add_executable(singleton-project-2 main.c singleton_int.c)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
